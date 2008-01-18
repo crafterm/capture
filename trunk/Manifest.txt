@@ -1,3 +1,4 @@
+.gitignore
 History.txt
 MIT-LICENSE
 Manifest.txt
@@ -7,6 +8,9 @@ bin/capture
 config/hoe.rb
 config/requirements.rb
 lib/capture.rb
+lib/capture/extensions.rb
+lib/capture/nikon.jpg
+lib/capture/screen.rb
 lib/capture/version.rb
 script/destroy
 script/generate
