@@ -23,6 +23,7 @@ During the capture, the desktop screen will fade in and out to provide feedback 
 h2. Code
 
 The trunk repository is <code>svn://rubyforge.org/var/svn/capture/trunk</code> for anonymous access.
+RDocs "API":http://capture.rubyforge.org/rdoc/ is also available.
 
 h2. License
 
