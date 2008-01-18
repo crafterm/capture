@@ -34,5 +34,5 @@ Comments are welcome. Send an email to "Marcus Crafter":mailto:crafterm@redartis
 
 h2. Credits
 
-Special thanks to "DSevilla":http://www.flickr.com/photos/dsevilla/249202834/ for the camera image used in the project licensed under creative commons.
+Special thanks to "DSevilla":http://www.flickr.com/photos/dsevilla/249202834/ for the camera image used in the project licensed under "creative commons":http://creativecommons.org/licenses/by-nc/2.0/.
 
