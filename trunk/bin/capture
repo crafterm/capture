@@ -9,36 +9,32 @@ rescue LoadError
   # no rubygems to load, so we fail silently
 end
 
+require 'capture'
 require 'optparse'
 
-# NOTE: the option -p/--path= is given as an example, and should probably be replaced in your application.
-
 OPTIONS = {
-  :path     => '~'
+  :output     => '~/capture.jpg'
 }
-MANDATORY_OPTIONS = %w(  )
 
 parser = OptionParser.new do |opts|
   opts.banner = <<BANNER
-This application is wonderful because...
+Capture is a command line utility tool to take screenshots of your Mac OS X desktop via RubyCocoa.
 
 Usage: #{File.basename($0)} [options]
 
 Options are:
 BANNER
   opts.separator ""
-  opts.on("-p", "--path=PATH", String,
-          "The root path for selecting files",
-          "Default: ~") { |OPTIONS[:path]| }
+  opts.on("-o", "--output=PATH", String,
+          "The output path for the captured screenshot",
+          "Default: ~/capture.jpg") { |OPTIONS[:path]| }
   opts.on("-h", "--help",
           "Show this help message.") { puts opts; exit }
   opts.parse!(ARGV)
-
-  if MANDATORY_OPTIONS && MANDATORY_OPTIONS.find { |option| OPTIONS[option.to_sym].nil? }
-    puts opts; exit
-  end
 end
 
-path = OPTIONS[:path]
+output = OPTIONS[:output]
 
-# do stuff
+puts "Output is #{File.expand_path(output)}"
+
+Capture::Screen.capture.save(output)
