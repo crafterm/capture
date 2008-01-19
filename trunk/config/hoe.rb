@@ -2,7 +2,7 @@ require 'capture/version'
 
 AUTHOR = 'Marcus Crafter'  # can also be an array of Authors
 EMAIL = "crafterm@redartisan.com"
-DESCRIPTION = "Capture is a command line utility tool to take screenshots of your Mac OS X desktop using via RubyCocoa"
+DESCRIPTION = "Capture is a command line utility tool to take screenshots of your Mac OS X desktop via RubyCocoa"
 GEM_NAME = 'capture' # what ppl will type to install your gem
 RUBYFORGE_PROJECT = 'capture' # The unix name for your project
 HOMEPATH = "http://#{RUBYFORGE_PROJECT}.rubyforge.org"

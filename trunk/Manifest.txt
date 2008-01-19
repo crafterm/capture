@@ -21,7 +21,6 @@ spec/spec.opts
 spec/spec_helper.rb
 tasks/deployment.rake
 tasks/environment.rake
-tasks/rspec.rake
 tasks/website.rake
 website/images/nikon.jpg
 website/index.html

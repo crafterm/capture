@@ -13,7 +13,8 @@ require 'capture'
 require 'optparse'
 
 OPTIONS = {
-  :output     => '~/capture.jpg'
+  :output => '~/capture.jpg',
+  :delay  => 0
 }
 
 parser = OptionParser.new do |opts|
@@ -28,13 +29,14 @@ BANNER
   opts.on("-o", "--output=PATH", String,
           "The output path for the captured screenshot",
           "Default: ~/capture.jpg") { |OPTIONS[:path]| }
+  opts.on("-d", "--delay=X", Float,
+          "Delay X seconds before screen capture is taken") { |OPTIONS[:delay]| }
   opts.on("-h", "--help",
           "Show this help message.") { puts opts; exit }
   opts.parse!(ARGV)
 end
 
 output = OPTIONS[:output]
+delay  = OPTIONS[:delay]
 
-puts "Output is #{File.expand_path(output)}"
-
-Capture::Screen.capture.save(output)
+Capture::Screen.capture(delay).save(output)

@@ -33,7 +33,7 @@
     <h1>capture</h1>
     <div id="version" class="clickable" onclick='document.location = "http://rubyforge.org/projects/capture"; return false'>
       <p>Get Version</p>
-      <a href="http://rubyforge.org/projects/capture" class="numbers">0.0.1</a>
+      <a href="http://rubyforge.org/projects/capture" class="numbers">0.0.2</a>
     </div>
     <h1>&#x2192; &#8216;capture&#8217;</h1>
 
@@ -52,12 +52,15 @@
 	<p><pre class='syntax'><span class="ident">sudo</span> <span class="ident">gem</span> <span class="ident">install</span> <span class="ident">capture</span></pre></p>
 
 
-	<h2>Demonstration of usage</h2>
+	<h2>Usage</h2>
 
 
-<pre>$&gt; capture</pre>
+<pre>$&gt; capture [options]</pre>
 
 	<p>By default &#8216;capture&#8217; will save the desktop screenshot to a file named ~/capture.jpg. You can set a target filename using the -o parameter.</p>
+
+
+	<p>Additionally, you can specify a delay parameter via &#8216;-d X&#8217;, where &#8216;capture&#8217; will delay the creation of the screenshot X seconds so that you may hide or re-arrange windows.</p>
 
 
 	<p>During the capture, the desktop screen will fade in and out to provide feedback of the screen capture taking place.</p>
@@ -68,6 +71,13 @@
 
 	<p>The trunk repository is <code>svn://rubyforge.org/var/svn/capture/trunk</code> for anonymous access.
 RDocs <a href="http://capture.rubyforge.org/rdoc/"><span class="caps">API</span></a> is also available.</p>
+
+
+	<h2>Requirements</h2>
+
+
+	<p>Mac <span class="caps">OS X</span> Leopard (ie 10.5.x).
+RubyCocoa (Mac <span class="caps">OS X</span> Leopard includes RubyCocoa by default).</p>
 
 
 	<h2>License</h2>
@@ -87,7 +97,7 @@ RDocs <a href="http://capture.rubyforge.org/rdoc/"><span class="caps">API</span>
 
 	<p>Special thanks to <a href="http://www.flickr.com/photos/dsevilla/249202834/">DSevilla</a> for the camera image used in the project licensed under <a href="http://creativecommons.org/licenses/by-nc/2.0/">creative commons</a>.</p>
     <p class="coda">
-      <a href="crafterm@redartisan.com">Marcus Crafter</a>, 18th January 2008<br>
+      <a href="crafterm@redartisan.com">Marcus Crafter</a>, 19th January 2008<br>
       Theme extended from <a href="http://rb2js.rubyforge.org/">Paul Battley</a>
     </p>
 </div>

@@ -12,11 +12,13 @@ h2. Installing
 
 <pre syntax="ruby">sudo gem install capture</pre>
 
-h2. Demonstration of usage
+h2. Usage
 
-<pre>$> capture</pre>
+<pre>$> capture [options]</pre>
 
 By default 'capture' will save the desktop screenshot to a file named ~/capture.jpg. You can set a target filename using the -o parameter.
+
+Additionally, you can specify a delay parameter via '-d X', where 'capture' will delay the creation of the screenshot X seconds so that you may hide or re-arrange windows.
 
 During the capture, the desktop screen will fade in and out to provide feedback of the screen capture taking place.
 
@@ -24,6 +26,11 @@ h2. Code
 
 The trunk repository is <code>svn://rubyforge.org/var/svn/capture/trunk</code> for anonymous access.
 RDocs "API":http://capture.rubyforge.org/rdoc/ is also available.
+
+h2. Requirements
+
+Mac OS X Leopard (ie 10.5.x).
+RubyCocoa (Mac OS X Leopard includes RubyCocoa by default).
 
 h2. License
 
