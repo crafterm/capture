@@ -4,7 +4,9 @@ require 'capture/extensions'
 module Capture
   class Screen
 
-    def self.capture
+    def self.capture(delay = 0)
+      sleep delay if delay > 0
+
       fade do
         screenshot = OSX::CGWindowListCreateImage(OSX::CGRectInfinite, OSX::KCGWindowListOptionOnScreenOnly, OSX::KCGNullWindowID, OSX::KCGWindowImageDefault)
         OSX::CIImage.imageWithCGImage(screenshot)
