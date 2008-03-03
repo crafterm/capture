@@ -1,0 +1,10 @@
+Capture
+=======
+
+Capture is a command line screenshot capture tool for Mac OS X Leopard. It
+uses RubyCocoa to take a screenshot of your desktop and save it to a file.
+
+--
+
+Marcus Crafter <crafterm@redartisan.com>
+
